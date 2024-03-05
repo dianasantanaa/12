@@ -1,0 +1,68 @@
+<!DOCTYPE html><!--informa al navegdor que version de HTML se ocupa-->
+<html lang="en"><!--se utiliza para comenzar a estructurar y el idioma-->
+<head><!--información general acerca del documento, incluyendo su título y
+    enlaces a scripts y hojas de estilos-->
+    <meta charset="UTF-8"><!--responsable de que se muestre el contenido correctamente y con caracteres-->
+<!-- metaetiqueta mediante la que se establece si se puede hacer zoom en una página, el zoom inicial o 
+        la anchura de la pantalla del dispositivo-->    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool images</title><!--se encarga de dale titulo a la pestaña de la pagina-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/imagen.png"/><!--se coloca una imagen de icono a la pestaña-->
+</head><!--se cierra la parte de la informacion general-->
+<body style="background-color:antiquewhite; align-items: center;"><!--se escribe el contenido que ira dentro de la pagina web
+agregamos los estilos que queremos-->
+
+<!--agregamos el titulo principal agregando tamaño de letra, color y posicion-->
+    <h1 style=" text-align: center; font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">IMAGE MAP</h1>
+    <!--agregamos la imagen que queremos que aparezca al principio
+    agregamos usemap para referenciarnos a la figura que se hara-->
+    <img src="imgs/3.jpg" alt = "Imagen no encontrada" usemap="#rectangle" />
+    <!--rectangle se refiere a que de ese tipo sera la forma de la parte de imagen a la que deseamos ingresar-->
+    <map name="rectangle">
+        <!--en area damos las coordenadas para que esta solo se centre en lo que necesitamos
+        referenciamos al html para la pagina de esa parte de imagen-->
+        <area
+        shape="rect"
+        coords="34, 44, 270, 350"
+        href="pages/lap.html"
+        name="rectangle"/>
+    <!--agregamos una segunda area a la misma imagen, pero con otras coordenadas
+    para ek otro objeto, igual la pagina a la que estilaremos-->
+        <area 
+        shape="circle" 
+        coords="337, 300, 44" 
+        href="pages/cafe.html" />
+<!--se agrega una tercera area para otro objeto de la imagen, agregamos diferentes cordenadas
+el tipo de figura es importante, referenciamos a la pagina quwe se estilara-->
+        <area
+        shape="rect"
+        coords="333, 248, 290, 172"
+        href="pages/celular.html"
+        name="rectangle"/>
+    </map> <!--terminamos de dar los objetos de la peimer imagen-->
+
+<!--agregamos la segunda imagen a la pagina principal, ahora se hara con poligonos-->
+    <img src="imgs/croissant.webp" alt="imagen no encontrada" usemap="#poly"/>
+    <!--referenciamos el map que se hara que sera poly-->
+    <map name="poly">
+        <!--en el area agregamos las cordenadas respecto al objeto que deseamos de la imagen
+        agregamos el tipo de figura, referenciamos a la paginaque se estilara-->
+        <area
+        shape="poly"
+        coords="592,231 583,249 569,270 553,276 540,281 530,290 521,293 516,305 504,312 498,314 495,324 489,330 481,336 469,341 454,343 438,345 429,346 419,351 415,359 408,362 400,367 391,372 386,376 376,378 369,385 362,389 355,389 346,389 336,390 320,393 310,394 289,394 281,393 270,386 255,382 245,389 235,385 225,385 214,385 198,386 189,382 171,385 162,380 150,369 139,360 128,355 123,355 110,356 101,354 88,346 76,340 62,332 51,325 41,323 35,318 30,310 21,303 10,301 4,299 1,298 1,215 0,117 8,114 25,113 47,114 67,117 58,113 67,108 76,105 84,100 97,100 100,88 101,80 105,73 111,65 119,61 128,56 139,48 150,45 167,43 184,39 198,35 213,26 231,22 248,16 259,21 264,16 279,16 294,16 312,21 323,25 334,32 351,40 364,52 377,61 390,61 406,61 424,66 426,74 434,82 442,86 451,95 464,97 473,98 489,100 504,101 516,101 527,101 543,105 556,121 564,131 578,145 588,161 595,167 592,180 592,193 594,206 599,216 599,228 481,350 481,350 487,324 "
+        href="pages/pan.html"
+        name="poly"/>
+<!--agregamos una segunda area del mismo tipo en la misma imagen, damos las coordenadas 
+del segundo onjeto y referenciamos a la pagina que se estilara para este objeto-->
+        <area
+        shape="poly"
+        coords="695,140 683,140 671,131 653,131 632,131 619,135 609,144 600,156 595,165 590,183 594,203 600,216 608,235 621,258 632,270 664,310 689,337 695,338 693,303 692,284 667,263 656,246 644,232 640,220 634,205 630,193 630,178 629,170 648,165 670,179 682,193 692,207 696,168 696,144 704,128 715,117 724,105 744,93 758,88 770,84 792,83 803,80 819,76 835,75 855,75 884,75 918,83 951,87 969,93 982,97 993,102 1006,108 1024,121 1024,228 1023,387 1011,402 1000,412 991,421 981,437 736,437 724,429 706,407 700,387 696,373 696,351 693,323 695,272 693,223 693,191 696,158 "
+        href="pages/peltre.html"
+        name="poly"/>
+    </map> <!--se terminan los objetos de la segunda imagen-->
+
+
+</body><!--se termina lo que ira dentro de la pagina web-->
+</html><!--fin de la estructura-->
